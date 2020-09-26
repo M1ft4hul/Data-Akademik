@@ -214,143 +214,160 @@
     <!-- modal akhir tambah data -->
 
     <!-- modal Detail Data -->
-    <div class="modal fade" id="detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><i class="mdi mdi-account-card-details"></i> Detail Data Siswa</h5>
-                </div>
-                <div class="modal-body">
-                    <table width="100%" style="font-size:14px">
-                        <tr>
-                            <td width="150">NIS</td>
-                            <td width="10">:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td width="150">NISN</td>
-                            <td width="10">:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td width="150">Nama Siswa</td>
-                            <td width="10">:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Tempat Lahir</td>
-                            <td>:</td>
-                            <td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Jenis Kelamin</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Kelas</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Agama</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Status Dalam Keluarga</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Anak Ke</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>No Telpon Siswa</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Asal Sekolah</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Alamat Siswa</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Tanggal Lahir</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Tanggal Di terima</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Nama Ayah</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Nama Ibu</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Pekerjaan Ayah</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Pekerjaan Ibu</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Alamat Orang Tua</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Nomor Telpon</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Nama Wali</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Alamat Wali</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Pekerjaan Wali</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Password</td>
-                            <td>:</td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-danger btn-rounded" data-dismiss="modal"><i class="mdi mdi-close"></i> Close</button>
+    <?php
+    foreach ($tampil as $a) {
+    ?>
+        <div class="modal fade" id="detail<?= $a->id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="mdi mdi-account-card-details"></i> Detail Data Siswa</h5>
+                    </div>
+                    <div class="modal-body">
+                        <table width="100%" style="font-size:14px">
+                            <tr>
+                                <td width="150">NIS</td>
+                                <td width="10">:</td>
+                                <td><?php echo $a->nis ?></td>
+                            </tr>
+                            <tr>
+                                <td width="150">NISN</td>
+                                <td width="10">:</td>
+                                <td><?php echo $a->nisn ?></td>
+                            </tr>
+                            <tr>
+                                <td width="150">Nama Siswa</td>
+                                <td width="10">:</td>
+                                <td><?php echo $a->nama ?></td>
+                            </tr>
+                            <tr>
+                                <td>Tempat Lahir</td>
+                                <td>:</td>
+                                <td><?php echo $a->tempat_lahir ?></td>
+                            </tr>
+                            <tr>
+                                <td>Jenis Kelamin</td>
+                                <td>:</td>
+                                <td><?php $t = $a->jk;
+                                    if ($t == 'L') {
+                                        echo "Laki-laki";
+                                    } else {
+                                        echo "Perempuan";
+                                    }
+                                    ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Kelas</td>
+                                <td>:</td>
+                                <td><?php echo $a->kelas ?></td>
+                            </tr>
+                            <tr>
+                                <td>Agama</td>
+                                <td>:</td>
+                                <td><?php echo $a->agama ?></td>
+                            </tr>
+                            <tr>
+                                <td>Status Dalam Keluarga</td>
+                                <td>:</td>
+                                <td><?php echo $a->status_dalam_keluarga ?></td>
+                            </tr>
+                            <tr>
+                                <td>Anak Ke</td>
+                                <td>:</td>
+                                <td><?php echo $a->anak_ke ?></td>
+                            </tr>
+                            <tr>
+                                <td>No Telpon Siswa</td>
+                                <td>:</td>
+                                <td><?php echo $a->no_telpon ?></td>
+                            </tr>
+                            <tr>
+                                <td>Asal Sekolah</td>
+                                <td>:</td>
+                                <td><?php echo $a->asal_sekolah ?></td>
+                            </tr>
+                            <tr>
+                                <td>Alamat Siswa</td>
+                                <td>:</td>
+                                <td><?php echo $a->alamat_siswa ?></td>
+                            </tr>
+                            <tr>
+                                <td>Tanggal Lahir</td>
+                                <td>:</td>
+                                <td><?php echo $a->tanggal_lahir ?></td>
+                            </tr>
+                            <tr>
+                                <td>Tanggal Di terima</td>
+                                <td>:</td>
+                                <td><?php echo $a->tanggal_terima ?></td>
+                            </tr>
+                            <tr>
+                                <td>Nama Ayah</td>
+                                <td>:</td>
+                                <td><?php echo $a->nama_ayah ?></td>
+                            </tr>
+                            <tr>
+                                <td>Nama Ibu</td>
+                                <td>:</td>
+                                <td><?php echo $a->nama_ibu ?></td>
+                            </tr>
+                            <tr>
+                                <td>Pekerjaan Ayah</td>
+                                <td>:</td>
+                                <td><?php echo $a->pekerjaan_ayah ?></td>
+                            </tr>
+                            <tr>
+                                <td>Pekerjaan Ibu</td>
+                                <td>:</td>
+                                <td><?php echo $a->pekerjaan_ibu ?></td>
+                            </tr>
+                            <tr>
+                                <td>Alamat Orang Tua</td>
+                                <td>:</td>
+                                <td><?php echo $a->alamat_ortu ?></td>
+                            </tr>
+                            <tr>
+                                <td>Nomor Telpon</td>
+                                <td>:</td>
+                                <td><?php echo $a->tlp_ortu ?></td>
+                            </tr>
+                            <tr>
+                                <td>Nama Wali</td>
+                                <td>:</td>
+                                <td><?php echo $a->nama_wali ?></td>
+                            </tr>
+                            <tr>
+                                <td>Alamat Wali</td>
+                                <td>:</td>
+                                <td><?php echo $a->alamat_wali ?></td>
+                            </tr>
+                            <tr>
+                                <td>Pekerjaan Wali</td>
+                                <td>:</td>
+                                <td><?php echo $a->pekerjaan_wali ?></td>
+                            </tr>
+                            <tr>
+                                <td>No Hp Wali</td>
+                                <td>:</td>
+                                <td><?php echo $a->telp_wali ?></td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>:</td>
+                                <td><?php echo $a->password ?></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-danger btn-rounded" data-dismiss="modal"><i class="mdi mdi-close"></i> Close</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    <?php
+    }
+    ?>
     <!-- modal akhir detail -->
 </div>
 
