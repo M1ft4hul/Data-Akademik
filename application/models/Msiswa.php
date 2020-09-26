@@ -13,7 +13,7 @@ class Msiswa extends CI_Model
         $data['agama'] = $this->input->post('agama', true);
         $data['status_dalam_keluarga'] = $this->input->post('status_dalam_keluarga', true);
         $data['anak_ke'] = $this->input->post('anak_ke', true);
-        $data['no_tlepon'] = $this->input->post('no_tlepon', true);
+        $data['no_telpon'] = $this->input->post('no_telpon', true);
         $data['asal_sekolah'] = $this->input->post('asal_sekolah',  true);
         $data['alamat_siswa'] = $this->input->post('alamat_siswa',  true);
         $data['tanggal_lahir'] = $this->input->post('tanggal_lahir',  true);
