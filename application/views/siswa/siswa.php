@@ -30,7 +30,7 @@
                                     <td><?php echo $a->tempat_lahir ?></td>
                                     <td class=" text-center">
                                         <a class="btn btn-warning btn-rounded mb-2">Edit </a>
-                                        <a data-toggle="modal" data-target="#detail" class="btn btn-info btn-rounded mb-2">Detail</a>
+                                        <a data-toggle="modal" data-target="#detail<?= $a->id; ?>" class="btn btn-info btn-rounded mb-2">Detail</a>
                                         <a href="<?php echo site_url('Siswa/hapus/' . $a->id); ?>" class="btn btn-danger btn-rounded mb-2">Hapus</a>
                                     </td>
                                 </tr>
