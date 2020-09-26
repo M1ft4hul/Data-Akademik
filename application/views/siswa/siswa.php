@@ -135,12 +135,12 @@
 
                             </div>
 
-                            <div class="col-md-3 mb-4">
+                            <div class="col-md-6 mb-4">
                                 <label>Tanggal Lahir</label>
                                 <input type="date" name="tanggal_lahir" value="0000-00-00" class="form-control flatpickr flatpickr-input active" type="text" placeholder="Select Date..">
                             </div>
 
-                            <div class="col-md-3 mb-4">
+                            <div class="col-md-6 mb-4">
                                 <label>Tanggal Diterima di sekolah</label>
                                 <input type="date" name="tanggal_terima" value="0000-00-00" class="form-control flatpickr flatpickr-input active" type="text" placeholder="Select Date..">
                             </div>
