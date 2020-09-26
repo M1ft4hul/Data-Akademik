@@ -44,7 +44,6 @@
                                 <th>Kelas</th>
                                 <th>Agama</th>
                                 <th>Tempat Lahir</th>
-                                <th class="invisible"></th>
                             </tr>
                         </tfoot>
                     </table>
