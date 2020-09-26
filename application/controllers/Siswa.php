@@ -14,6 +14,13 @@ class Siswa extends CI_Controller
         $this->load->view('layout', $tmp);
     }
 
+    function simpan_data()
+    {
+        $this->msiswa->Tambahsiswa();
+        $this->session->set_flashdata('sukses', 'Data Berhasil Di Tambahkan');
+        redirect('Siswa');
+    }
+
     function hapus($id)
     {
         if ($id == "") {
