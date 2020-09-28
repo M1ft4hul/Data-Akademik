@@ -22,6 +22,13 @@ class Siswa extends CI_Controller
         redirect('Siswa');
     }
 
+    function edit_data()
+    {
+        $this->msiswa->Editsiswa();
+        $this->session->set_flashdata('sukses', 'Data Berhasil Di Edit');
+        redirect('Siswa');
+    }
+
     function hapus($id)
     {
         if ($id == "") {
