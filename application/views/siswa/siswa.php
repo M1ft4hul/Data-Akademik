@@ -29,7 +29,7 @@
                                     <td><?php echo $a->agama ?></td>
                                     <td><?php echo $a->tempat_lahir ?></td>
                                     <td class=" text-center">
-                                        <a class="btn btn-warning btn-rounded mb-2">Edit </a>
+                                        <a data-toggle="modal" data-target="#edit<?= $a->id; ?>" class="btn btn-warning btn-rounded mb-2">Edit </a>
                                         <a data-toggle="modal" data-target="#detail<?= $a->id; ?>" class="btn btn-info btn-rounded mb-2">Detail</a>
                                         <a href="<?php echo site_url('Siswa/hapus/' . $a->id); ?>" class="btn btn-danger btn-rounded mb-2">Hapus</a>
                                     </td>
@@ -214,7 +214,10 @@
     <!-- modal akhir tambah data -->
 
     <!-- modal edit Data -->
-    <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <?php
+    foreach ($tampil as $a) {
+    ?>
+    <div class="modal fade" id="edit<?= $a->id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -372,6 +375,9 @@
             </div>
         </div>
     </div>
+    <?php
+    }
+    ?>
     <!-- modal akhit edit data -->
 
     <!-- modal Detail Data -->
