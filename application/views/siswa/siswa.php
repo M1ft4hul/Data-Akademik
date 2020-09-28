@@ -312,54 +312,54 @@
                             </div>
                             <div class="col-md-12 mb-4">
                                 <label for="ibu">Nama Ibu</label>
-                                <input type="text" name="nama_ibu" value="" class="form-control" id="ibu" placeholder="" value="" required>
+                                <input type="text" name="nama_ibu" value="<?php echo $a->nama_ibu ?>" class="form-control" id="ibu" placeholder="" value="" required>
 
                             </div>
                             <div class="col-md-12 mb-4">
                                 <label for="alamat_ortu">Alamat Orang Tua</label>
-                                <input type="text" name="alamat_ortu" class="form-control" id="alamat_ortu" placeholder="" value="" required>
+                                <input type="text" name="alamat_ortu" value="<?php echo $a->alamat_ortu ?>" class="form-control" id="alamat_ortu" placeholder="" value="" required>
 
                             </div>
                             <div class="col-md-12 mb-4">
                                 <label for="hp">No telepon Orang Tua</label>
-                                <input type="text" name="tlp_ortu" class="form-control" id="hp" placeholder="" value="" required>
+                                <input type="text" name="tlp_ortu" value="<?php echo $a->tlp_ortu ?>" class="form-control" id="hp" placeholder="" value="" required>
 
                             </div>
                             <div class="col-md-12 mb-4">
                                 <label for="pekerjaanAyah">Pekerjaan Ayah</label>
-                                <input type="text" name="pekerjaan_ayah" class="form-control" id="pekerjaanAyah" placeholder="" value="" required>
+                                <input type="text" name="pekerjaan_ayah" value="<?php echo $a->pekerjaan_ayah ?>" class="form-control" id="pekerjaanAyah" placeholder="" value="" required>
 
                             </div>
                             <div class="col-md-12 mb-4">
                                 <label for="pekerjaanIbu">Pekerjaan Ibu</label>
-                                <input type="text" name="pekerjaan_ibu" class="form-control" id="pekerjaanIbu" placeholder="" value="" required>
+                                <input type="text" name="pekerjaan_ibu" value="<?php echo $a->pekerjaan_ibu ?>" class="form-control" id="pekerjaanIbu" placeholder="" value="" required>
 
                             </div>
                             <div class="col-md-12 mb-4">
                                 <label for="wali">Nama Wali</label>
-                                <input type="text" name="nama_wali" class="form-control" id="wali" placeholder="" value="" required>
+                                <input type="text" name="nama_wali" value="<?php echo $a->nama_wali ?>" class="form-control" id="wali" placeholder="" value="" required>
 
                             </div>
                             <div class="col-md-12 mb-4">
                                 <label for="wali">Alamat Wali</label>
-                                <input type="text" name="alamat_wali" class="form-control" id="wali" placeholder="" value="" required>
+                                <input type="text" name="alamat_wali" value="<?php echo $a->alamat_wali ?>" class="form-control" id="wali" placeholder="" value="" required>
 
                             </div>
                             <div class="col-md-12 mb-4">
                                 <label for="nohpwali">Nomor telepon Wali</label>
-                                <input type="text" name="telp_wali" class="form-control" id="nohpwali" placeholder="" value="" required>
+                                <input type="text" name="telp_wali" value="<?php echo $a->telp_wali ?>" class="form-control" id="nohpwali" placeholder="" value="" required>
 
                             </div>
 
                             <div class="col-md-12 mb-4">
                                 <label for="pekerjaanWali">Pekerjaan wali</label>
-                                <input type="text" name="pekerjaan_wali" class="form-control" id="PekerjaanWali" placeholder="" value="" required>
+                                <input type="text" name="pekerjaan_wali" value="<?php echo $a->pekerjaan_wali ?>" class="form-control" id="PekerjaanWali" placeholder="" value="" required>
 
                             </div>
 
                             <div class="col-md-12 mb-4">
                                 <label for="password">Password</label>
-                                <input type="password" name="password" class="form-control" id="password" placeholder="" value="" required>
+                                <input type="password" name="password" value="<?php echo $a->password ?>" class="form-control" id="password" placeholder="" value="" required>
 
                             </div>
                         </div>
