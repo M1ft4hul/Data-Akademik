@@ -213,6 +213,9 @@
     </div>
     <!-- modal akhir tambah data -->
 
+    <!-- modal edit Data -->
+    <!-- modal akhit edit data -->
+
     <!-- modal Detail Data -->
     <?php
     foreach ($tampil as $a) {
