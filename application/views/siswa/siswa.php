@@ -359,9 +359,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-danger btn-rounded" data-dismiss="modal"><i class="mdi mdi-close"></i> Close</button>
-                    </div>
+
                 </div>
             </div>
         </div>
