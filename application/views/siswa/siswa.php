@@ -58,7 +58,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><i class="mdi mdi-account-card-details"></i> Detail Data Siswa</h5>
+                    <h5 class="modal-title" id="exampleModalLabel"><i class="mdi mdi-account-card-details"></i> Tambah Data Siswa</h5>
                 </div>
                 <div class="modal-body">
                     <form action="<?php echo base_url('siswa/simpan_data') ?>" method="POST">
